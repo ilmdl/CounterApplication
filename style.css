@@ -1,0 +1,25 @@
+body {
+    font-family: comfortaa;
+}
+#counter {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin: 0 auto;
+}
+#buttoncontainer {
+    display: flex;
+    justify-content: center;
+}
+button {
+    margin: 0px 5px;
+    background-color: rgb(119, 235, 90);
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+button:hover {
+    background-color: aquamarine;
+}
