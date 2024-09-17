@@ -19,7 +19,7 @@ decreasebtn.onclick = function() {
 }
 
 resetbtn.onclick = function() {
-    array.push(value)
+    isunique(array, value)
     value = 0;
     highscore.textContent = maxval(array);
     history.textContent = array
@@ -34,4 +34,16 @@ function maxval(listofnumber) {
         }
     }
     return bignumber;
+}
+function isunique (listofnumber, numbertoadd) {
+    let duplicate = false
+    for(let i = 0; i < listofnumber.length; i++) {
+        if (listofnumber[i] == numbertoadd) {
+            duplicate = true
+            break;
+        }
+    }
+    if(duplicate == false) {
+        listofnumber.push(numbertoadd);
+    }
 }
