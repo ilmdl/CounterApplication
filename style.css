@@ -16,6 +16,13 @@ body {
     text-align: center;
     font-size: 30px;
 }
+#History {
+    text-align: center;
+    font-size: 30px;
+}
+h3 {
+    text-align: center;
+}
 
 button {
     margin: 0px 5px;

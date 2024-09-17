@@ -4,6 +4,7 @@ const resetbtn = document.getElementById("bt3");
 
 const counter = document.getElementById("counter");
 const highscore = document.getElementById("Highscore");
+const history = document.getElementById("History");
 
 let value = 0;
 let array = [];
@@ -21,6 +22,7 @@ resetbtn.onclick = function() {
     array.push(value)
     value = 0;
     highscore.textContent = maxval(array);
+    history.textContent = array
     counter.textContent = value;
 }
 
